@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "Build",
+			"detail": "Build typescript plugins",
+			"path": "./ts"
+		},
+		{
+			"type": "npm",
+			"script": "start",
+			"problemMatcher": [],
+			"label": "Serve (TS)",
+			"detail": "Build the ts plugins and start the server",
+			"path": "./ts",
+			"isBackground": true
+		},
+		{
+			"type": "npm",
+			"script": "serve",
+			"problemMatcher": [],
+			"label": "Serve (JS)",
+			"detail": "Runs the local server for hosting the plugins as a separate task",
+			"path": "./js",
+			"isBackground": true
+		}
+	]
+}
